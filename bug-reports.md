@@ -45,7 +45,9 @@ Penyerang dapat menebak password secara otomatis tanpa hambatan (brute force / c
 **Saran Perbaikan**  
 Terapkan rate limiting, lockout sementara, atau CAPTCHA setelah beberapa kali gagal.
 
-**Bukti:** [tambahkan `screenshots/BUG-01-percobaan-berulang.png`]
+**Bukti:** Tampilan setelah lebih dari 6 kali percobaan login gagal berturut-turut: hanya muncul pesan error biasa, tanpa lockout, CAPTCHA, atau peringatan tambahan.
+
+![BUG-01 setelah banyak percobaan gagal](screenshots/BUG-03-pesan-terpotong.png)
 
 ---
 
