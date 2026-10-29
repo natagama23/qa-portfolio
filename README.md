@@ -2,7 +2,7 @@
 
 Mahasiswa Teknik Informatika (semester 7) yang sedang fokus belajar **Quality Assurance (QA)**. Berlatar belakang UI/UX dan dasar Cyber Security, sehingga saya terbiasa memperhatikan sisi **usability** dan **keamanan** saat menguji aplikasi.
 
-📫 Kontak: [isi email] · [isi LinkedIn]
+📫 Kontak: gama82059@gmail.com · [LinkedIn](https://www.linkedin.com/in/muhammad-arif-billah-natagama-8b7125315)
 
 ---
 
@@ -40,7 +40,7 @@ Fitur login: username/password valid, salah, kosong, case-sensitive, format emai
 | OBS-03 | Tidak ada fitur show/hide password, sehingga pengguna sulit memastikan password yang diketik | Low |
 
 ### Dokumen
-- 📊 Test case & ringkasan temuan: [Google Sheet – isi link]
+- 📊 Test case & ringkasan temuan: [Google Sheet](https://docs.google.com/spreadsheets/d/1tOBTeLUC1jbGIvGAtP3jhZNwbULxlmorf8ABgktQv4Q/edit?usp=sharing)
 - 🐞 Bug report: [`bug-reports.md`](bug-reports.md) (BUG-01 sampai BUG-03)
 
 ### Yang Saya Pelajari
