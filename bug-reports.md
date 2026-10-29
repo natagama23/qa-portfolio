@@ -77,7 +77,9 @@ Pengalaman pengguna kurang baik: pengguna harus mencoba dua kali untuk mengetahu
 **Saran Perbaikan**  
 Validasi semua kolom wajib sekaligus dan tampilkan pesan untuk setiap kolom yang kosong.
 
-**Bukti:** [tambahkan `screenshots/BUG-02-form-kosong.png`]
+**Bukti:** 
+
+![BUG-02 form kosong](screenshots/BUG-02-form-kosong.png)
 
 ---
 
@@ -99,7 +101,7 @@ Pesan error yang panjang (3 baris) tidak tampil utuh di dalam kotak merah, sehin
 4. Perhatikan teks di kotak merah
 
 **Hasil Aktual**  
-Muncul pesan *"Epic sadface: Username and password do not match any user in this service"*, tetapi teksnya terpotong di bagian bawah/tepi kotak merah.
+Muncul pesan *"Epic sadface: Username and password do not match any user in this service"*, tetapi teksnya terpotong di bagian atas dan bawah kotak merah.
 
 **Hasil yang Diharapkan**  
 Seluruh teks pesan error terlihat utuh dan terbaca; kotak menyesuaikan tinggi sesuai panjang teks.
@@ -110,6 +112,10 @@ Pengguna bisa melewatkan bagian pesan error. Masalah tampilan (UI) yang konsiste
 **Saran Perbaikan**  
 Atur tinggi kotak error agar menyesuaikan konten (auto height) atau tambah padding.
 
-**Bukti:** [tambahkan `screenshots/BUG-03-pesan-terpotong.png`]
+**Bukti:** 
 
-**Catatan:** Perilaku ini terjadi pada layar dan ukuran jendela yang saya pakai; sebutkan resolusi/zoom saat mengambil screenshot.
+![BUG-03 pesan terpotong](screenshots/BUG-03-pesan-terpotong.png)
+
+![BUG-03 pesan terpotong (username salah)](screenshots/BUG-03-pesan-terpotong-2.png)
+
+**Catatan:** Terkonfirmasi pada dua percobaan (username salah dan password sangat panjang): teks pesan terpotong, sedangkan pesan pendek tampil normal.
