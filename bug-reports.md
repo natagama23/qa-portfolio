@@ -2,7 +2,7 @@
 
 **Aplikasi:** SauceDemo (https://www.saucedemo.com), situs demo untuk latihan testing  
 **Penguji:** Muhammad Arif Billah Natagama  
-**Environment:** Chrome [isi versi], Windows [isi versi], [isi tanggal tes]
+**Environment:** Chrome 156, Windows 11, 29 Oktober 2026
 
 | ID | Judul | Test Case | Severity | Priority | Status |
 |----|-------|-----------|----------|----------|--------|
