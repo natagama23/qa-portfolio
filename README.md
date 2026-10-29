@@ -42,6 +42,7 @@ Fitur login: username/password valid, salah, kosong, case-sensitive, format emai
 ### Dokumen
 - 📊 Test case & ringkasan temuan: [Google Sheet](https://docs.google.com/spreadsheets/d/1tOBTeLUC1jbGIvGAtP3jhZNwbULxlmorf8ABgktQv4Q/edit?usp=sharing)
 - 🐞 Bug report: [`bug-reports.md`](bug-reports.md) (BUG-01 sampai BUG-03)
+- 📚 Catatan belajar: [Bug Lifecycle dan STLC](catatan/bug-lifecycle-stlc.md)
 
 ### Yang Saya Pelajari
 - Menulis test case yang bisa diulang orang lain (ID, prasyarat, data uji, langkah, hasil diharapkan)
