@@ -12,8 +12,9 @@ Mahasiswa Teknik Informatika (semester 7) yang sedang fokus belajar **Quality As
 |---|---------|---------------|--------|
 | 1 | [Pengujian Fitur Login – SauceDemo](#project-1-pengujian-fitur-login-saucedemo) | Manual, Functional, Negative | ✅ Selesai |
 | 2 | [Pengujian Alur Belanja (cart → checkout) – SauceDemo](#project-2-pengujian-alur-belanja-saucedemo-akun-problem_user) | Manual, Functional, Exploratory | ✅ Selesai |
-| 3 | Pengujian API – Postman (Restful-Booker) | API Testing | ⏳ Rencana |
-| 4 | Otomasi Test Login – Playwright | Automation | ⏳ Rencana |
+| 3 | [Verifikasi Data dengan SQL](#project-3-verifikasi-data-dengan-sql) | SQL, Data Verification | ✅ Selesai |
+| 4 | Pengujian API – Postman (Restful-Booker) | API Testing | ⏳ Rencana |
+| 5 | Otomasi Test Login – Playwright | Automation | ⏳ Rencana |
 
 ---
 
@@ -89,5 +90,36 @@ Bug dicatat sebagai issue di Jira dan statusnya digeser mengikuti bug lifecycle 
 
 ---
 
+## Project 3: Verifikasi Data dengan SQL
+
+**Alat yang dipakai:** SQLite (sqliteonline.com), belajar lewat SQLBolt
+**Jenis pengujian:** Verifikasi data (data validation) memakai query SQL
+**Teknik yang dipakai:** `JOIN`, `LEFT JOIN`, `GROUP BY`, `HAVING`, filter `WHERE`
+
+### Ruang Lingkup
+Database toko latihan (`customers`, `products`, `orders`, `order_items`) yang sengaja diisi data bermasalah, lalu diperiksa dengan 10 query verifikasi seperti yang dilakukan QA setelah testing.
+
+### Hasil
+- **10 query verifikasi**, **9 masalah data** ditemukan
+
+| Jenis temuan | Contoh |
+|--------------|--------|
+| Email duplikat dan kosong | budi@mail.com dipakai dua pelanggan, pelanggan Eko tanpa email |
+| Data yatim (orphan) | Order 4 tanpa pelanggan, Order 5 menunjuk pelanggan yang tidak ada |
+| Order tanpa item | Order 6 |
+| Total tidak konsisten | Order 3: tercatat 20000, hitung ulang dari item 10000 |
+| Nilai tidak masuk akal | Stok -3, harga 0, quantity 0 |
+
+### Dokumen
+- 📁 Setup database, 10 query, dan penjelasan: [`sql/`](sql/)
+- 📊 Ringkasan rumus dan cara pakainya: tab *Cheat Sheet SQL* di [Google Sheet](https://docs.google.com/spreadsheets/d/1tOBTeLUC1jbGIvGAtP3jhZNwbULxlmorf8ABgktQv4Q/edit?usp=sharing)
+
+### Yang Saya Pelajari
+- Memeriksa data langsung di database, bukan hanya lewat tampilan aplikasi
+- Menemukan data yatim (orphan), duplikat, dan angka yang tidak konsisten dengan `LEFT JOIN` dan `GROUP BY`
+- Aturan aman: uji dengan `SELECT` + `WHERE` sebelum menjalankan `UPDATE` atau `DELETE`
+
+---
+
 ## 🛠️ Tools & Skill
-Test case design · Bug reporting · Postman · SQL dasar · Git/GitHub · Playwright (belajar) · Jira (dasar)
+Test case design · Bug reporting · Postman · SQL (SELECT, JOIN, GROUP BY, verifikasi data) · Git/GitHub · Playwright (belajar) · Jira (dasar)
